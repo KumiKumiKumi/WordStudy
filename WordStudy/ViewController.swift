@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         setAnsButton()
         setNextButton()
         
+        println("hello")
+        
         showQuestion()
         self.buttonAns.hidden = false //buttonAnsを表示
     }
@@ -70,7 +72,7 @@ class ViewController: UIViewController {
     func showAnswer(){
         labelA.text = String(wordJ[randInt])
         labelA.sizeToFit()
-        labelA.center = CGPointMake(240, 100) //表示位置
+        labelA.center = CGPointMake(240, 100)
         self.view.addSubview(labelA)
         self.buttonAns.hidden = true //buttonAnsを隠す
         self.buttonNext.hidden = false //buttonNextを表示
