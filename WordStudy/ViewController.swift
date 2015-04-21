@@ -16,19 +16,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let buttonSelectLang = UIButton()
     
     let wordJ : [String] = ["りんご", "みかん", "ぶどう", "メロン"]
-    let wordE : [String] = ["apple", "orange", "grape", "melon"]
-    let wordG : [String] = ["Apfeu", "Apfelsine", "Weintraube", "Melon"]
-    let wordF : [String] = ["Pomme", "Mandarine orange", "Raisin", "Melon"]
-    let wordI : [String] = ["Apple", "Mandarino arancione", "Mandarino arancino", "Melon"]
+
     
     var myValues : NSArray = ["英語","ドイツ語", "フランス語", "イタリア語"]
     var chooseLang: Int = 0
+    let labelLang: UILabel = UILabel(frame: CGRectMake(0,0,200,30))
     
     var randInt: Int = 0
     
     var myUIPicker: UIPickerView = UIPickerView()
     var myToolBar: UIToolbar!
     var textShowLang: UITextField!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +36,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         setDesign() //デザインの設定
         setLangButton() //言語選択ボタン表示
         setUIPicherView() //ピッカービューの設定
+        setLangLabel() //言語ラベルを表示
         
         setAnsButton()
         setNextButton()
         
         showQuestion()
-        self.buttonAns.hidden = false //buttonAnsを表示
-        
     }
     
     
@@ -69,13 +67,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         makeQuestion()
         labelQ.text = String(setLang()[randInt])
         labelQ.sizeToFit()
-        labelQ.center = CGPointMake(80, 100) //表示位置
+        labelQ.center = CGPointMake(80, 150) //表示位置
         self.view.addSubview(labelQ)
         self.buttonNext.hidden = true //buttonNextを隠す
         self.buttonAns.hidden = false //buttonAnsを表示
     }
     
     func setLang() -> [String]{
+        let wordE : [String] = ["apple", "orange", "grape", "melon"]
+        let wordG : [String] = ["Apfeu", "Apfelsine", "Weintraube", "Melon"]
+        let wordF : [String] = ["Pomme", "Mandarine orange", "Raisin", "Melon"]
+        let wordI : [String] = ["Apple", "Mandarino arancione", "Mandarino arancino", "Melon"]
+        
         if chooseLang==0  { return wordE }
         else if chooseLang==1  { return wordG }
         else if chooseLang==2  { return wordF }
@@ -85,7 +88,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func hideQuestion(){
         labelQ.text = ""
         labelQ.sizeToFit()
-        labelQ.center = CGPointMake(80, 100) //表示位置
+        labelQ.center = CGPointMake(80, 150) //表示位置
         self.view.addSubview(labelQ)
     }
     
@@ -93,7 +96,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func showAnswer(){
         labelA.text = String(wordJ[randInt])
         labelA.sizeToFit()
-        labelA.center = CGPointMake(240, 100)
+        labelA.center = CGPointMake(240, 150)
         self.view.addSubview(labelA)
         self.buttonAns.hidden = true //buttonAnsを隠す
         self.buttonNext.hidden = false //buttonNextを表示
@@ -102,7 +105,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func hideAnswer(){
         labelA.text = ""
         labelA.sizeToFit()
-        labelA.center = CGPointMake(240, 100) //表示位置
+        labelA.center = CGPointMake(240, 150) //表示位置
         self.view.addSubview(labelA)
     }
     
@@ -111,7 +114,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         buttonAns.setTitleColor(UIColor.redColor(), forState: .Normal) //テキストの色
         buttonAns.frame = CGRectMake(0, 0, 100, 30) //サイズ
         buttonAns.tag = 1 //タグ番号
-        buttonAns.layer.position = CGPoint(x: self.view.frame.width/2, y:150) //配置場所
+        buttonAns.layer.position = CGPoint(x: self.view.frame.width/2, y:200) //配置場所
         buttonAns.backgroundColor = UIColor(red: 0.7, green: 0.2, blue: 0.2, alpha: 0.2) //背景色
         buttonAns.layer.cornerRadius = 10 //角丸
         buttonAns.addTarget(self, action: "onClickShowAnsButton:", forControlEvents:.TouchUpInside) //タップした時のメソッド
@@ -125,7 +128,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         buttonNext.setTitleColor(UIColor.blueColor(), forState: .Normal) //テキストの色
         buttonNext.frame = CGRectMake(0, 0, 100, 30) //サイズ
         buttonNext.tag = 1 //タグ番号
-        buttonNext.layer.position = CGPoint(x: self.view.frame.width/2, y:150) //配置場所
+        buttonNext.layer.position = CGPoint(x: self.view.frame.width/2, y:200) //配置場所
         buttonNext.backgroundColor = UIColor(red: 0.1, green: 0.2, blue: 0.8, alpha: 0.2) //背景色
         buttonNext.layer.cornerRadius = 10 //角丸
         buttonNext.addTarget(self, action: "onClickNextButton:", forControlEvents:.TouchUpInside) //タップした時のメソッド
@@ -137,7 +140,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     /********** 言語選択ボタンの制御 ************/
     func setLangButton(){
         buttonSelectLang.setTitle("言語の選択", forState: .Normal) //表示されるテキスト
-        buttonSelectLang.setTitleColor(UIColor.blackColor(), forState: .Normal) //テキストの色
+        buttonSelectLang.setTitleColor(UIColor.brownColor(), forState: .Normal) //テキストの色
         buttonSelectLang.frame = CGRectMake(0, 0, 320, 30) //サイズ
         buttonSelectLang.tag = 1 //タグ番号
         buttonSelectLang.layer.position = CGPoint(x: self.view.frame.width/2, y:270) //配置場所
@@ -151,6 +154,21 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func onClickLangButton(sender: UIButton){  //言語選択ボタンのイベント
         textShowLang.becomeFirstResponder() //言語のテキストフィールドにフォーカスを当てる
     }
+    
+    func setLangLabel(){ //言語を表示
+        labelLang.layer.masksToBounds = true
+        labelLang.layer.cornerRadius = 10.0
+        labelLang.text = myValues[0]as? String
+        labelLang.textColor = UIColor.orangeColor()
+        labelLang.textAlignment = NSTextAlignment.Center
+        labelLang.layer.position = CGPoint(x: self.view.bounds.width/2,y: 110) //配置設定
+        self.view.addSubview(labelLang)
+    }
+    
+    func changeLangLabel(){
+        labelLang.text = myValues[chooseLang]as? String
+    }
+
     
     
     /********** ピッカービューの指定 **********/
@@ -204,23 +222,33 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) { //選択時
         println(row)
         chooseLang = row
+        changeLangLabel()
         showQuestion()
     }
     
     func onClick(sender: UIBarButtonItem) {
         textShowLang.resignFirstResponder()
-        //println("閉じる")
     }
-    
-    
-    
-    
     
     
     //***********デザインの指定************//
     
     func setDesign(){
+        setTitle()
         setBackGround2()
+    }
+    
+    func setTitle(){ //タイトルを表示
+        let labelTitle: UILabel = UILabel(frame: CGRectMake(0,0,200,30))
+        labelTitle.backgroundColor = UIColor.orangeColor()
+        labelTitle.layer.masksToBounds = true
+        labelTitle.layer.cornerRadius = 10.0
+        labelTitle.text = "単語練習"
+        labelTitle.textColor = UIColor.whiteColor()
+        labelTitle.shadowColor = UIColor.grayColor()
+        labelTitle.textAlignment = NSTextAlignment.Center
+        labelTitle.layer.position = CGPoint(x: self.view.bounds.width/2,y: 70) //配置設定
+        self.view.addSubview(labelTitle)
     }
     
     func setBackGround(){
@@ -262,7 +290,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         //ラベルでできた背景の設定
         var labelBackGround: UILabel = UILabel(frame: CGRectMake(0,0,260,480))
         labelBackGround.text = ""
-        labelBackGround.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 0.3) //ラベルの背景色の設定
+        labelBackGround.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 0.2) //ラベルの背景色の設定
         labelBackGround.layer.masksToBounds = true //枠を丸くする
         labelBackGround.layer.cornerRadius = 20.0 //角の半径
         labelBackGround.center = CGPointMake(159, 280)
