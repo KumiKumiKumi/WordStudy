@@ -13,6 +13,20 @@
 		FAA9A6C21AE1E7060075A50D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6C11AE1E7060075A50D /* Images.xcassets */; };
 		FAA9A6C51AE1E7070075A50D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6C31AE1E7070075A50D /* LaunchScreen.xib */; };
 		FAA9A6D11AE1E7070075A50D /* WordStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9A6D01AE1E7070075A50D /* WordStudyTests.swift */; };
+		FAA9A6E51AE237980075A50D /* clarinet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6DB1AE237980075A50D /* clarinet.jpg */; };
+		FAA9A6E61AE237980075A50D /* double.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6DC1AE237980075A50D /* double.jpg */; };
+		FAA9A6E71AE237980075A50D /* flute.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6DD1AE237980075A50D /* flute.jpg */; };
+		FAA9A6E81AE237980075A50D /* horn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6DE1AE237980075A50D /* horn.jpg */; };
+		FAA9A6E91AE237980075A50D /* kanematsu.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6DF1AE237980075A50D /* kanematsu.png */; };
+		FAA9A6EA1AE237980075A50D /* perc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6E01AE237980075A50D /* perc.jpg */; };
+		FAA9A6EB1AE237980075A50D /* sax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6E11AE237980075A50D /* sax.jpg */; };
+		FAA9A6EC1AE237980075A50D /* trombone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6E21AE237980075A50D /* trombone.jpg */; };
+		FAA9A6ED1AE237980075A50D /* trumpet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6E31AE237980075A50D /* trumpet.jpg */; };
+		FAA9A6EE1AE237980075A50D /* tuba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6E41AE237980075A50D /* tuba.jpg */; };
+		FAA9A6F31AE23AA20075A50D /* IMG_1131.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6EF1AE23AA20075A50D /* IMG_1131.JPG */; };
+		FAA9A6F41AE23AA20075A50D /* IMG_1132.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6F01AE23AA20075A50D /* IMG_1132.JPG */; };
+		FAA9A6F51AE23AA20075A50D /* IMG_1133.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6F11AE23AA20075A50D /* IMG_1133.JPG */; };
+		FAA9A6F61AE23AA20075A50D /* IMG_1134.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAA9A6F21AE23AA20075A50D /* IMG_1134.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,20 @@
 		FAA9A6CA1AE1E7070075A50D /* WordStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9A6CF1AE1E7070075A50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA9A6D01AE1E7070075A50D /* WordStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStudyTests.swift; sourceTree = "<group>"; };
+		FAA9A6DB1AE237980075A50D /* clarinet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clarinet.jpg; sourceTree = "<group>"; };
+		FAA9A6DC1AE237980075A50D /* double.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = double.jpg; sourceTree = "<group>"; };
+		FAA9A6DD1AE237980075A50D /* flute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flute.jpg; sourceTree = "<group>"; };
+		FAA9A6DE1AE237980075A50D /* horn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horn.jpg; sourceTree = "<group>"; };
+		FAA9A6DF1AE237980075A50D /* kanematsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanematsu.png; sourceTree = "<group>"; };
+		FAA9A6E01AE237980075A50D /* perc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = perc.jpg; sourceTree = "<group>"; };
+		FAA9A6E11AE237980075A50D /* sax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sax.jpg; sourceTree = "<group>"; };
+		FAA9A6E21AE237980075A50D /* trombone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trombone.jpg; sourceTree = "<group>"; };
+		FAA9A6E31AE237980075A50D /* trumpet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trumpet.jpg; sourceTree = "<group>"; };
+		FAA9A6E41AE237980075A50D /* tuba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tuba.jpg; sourceTree = "<group>"; };
+		FAA9A6EF1AE23AA20075A50D /* IMG_1131.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1131.JPG; sourceTree = "<group>"; };
+		FAA9A6F01AE23AA20075A50D /* IMG_1132.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1132.JPG; sourceTree = "<group>"; };
+		FAA9A6F11AE23AA20075A50D /* IMG_1133.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1133.JPG; sourceTree = "<group>"; };
+		FAA9A6F21AE23AA20075A50D /* IMG_1134.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1134.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +87,7 @@
 		FAA9A6AC1AE1E7050075A50D = {
 			isa = PBXGroup;
 			children = (
+				FAA9A6DA1AE237980075A50D /* image_WordStudy */,
 				FAA9A6B71AE1E7060075A50D /* WordStudy */,
 				FAA9A6CD1AE1E7070075A50D /* WordStudyTests */,
 				FAA9A6B61AE1E7060075A50D /* Products */,
@@ -110,6 +139,28 @@
 				FAA9A6CF1AE1E7070075A50D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAA9A6DA1AE237980075A50D /* image_WordStudy */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9A6EF1AE23AA20075A50D /* IMG_1131.JPG */,
+				FAA9A6F01AE23AA20075A50D /* IMG_1132.JPG */,
+				FAA9A6F11AE23AA20075A50D /* IMG_1133.JPG */,
+				FAA9A6F21AE23AA20075A50D /* IMG_1134.JPG */,
+				FAA9A6DB1AE237980075A50D /* clarinet.jpg */,
+				FAA9A6DC1AE237980075A50D /* double.jpg */,
+				FAA9A6DD1AE237980075A50D /* flute.jpg */,
+				FAA9A6DE1AE237980075A50D /* horn.jpg */,
+				FAA9A6DF1AE237980075A50D /* kanematsu.png */,
+				FAA9A6E01AE237980075A50D /* perc.jpg */,
+				FAA9A6E11AE237980075A50D /* sax.jpg */,
+				FAA9A6E21AE237980075A50D /* trombone.jpg */,
+				FAA9A6E31AE237980075A50D /* trumpet.jpg */,
+				FAA9A6E41AE237980075A50D /* tuba.jpg */,
+			);
+			name = image_WordStudy;
+			path = image_WrodStudy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +243,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9A6E71AE237980075A50D /* flute.jpg in Resources */,
+				FAA9A6E91AE237980075A50D /* kanematsu.png in Resources */,
+				FAA9A6EC1AE237980075A50D /* trombone.jpg in Resources */,
+				FAA9A6F41AE23AA20075A50D /* IMG_1132.JPG in Resources */,
+				FAA9A6EB1AE237980075A50D /* sax.jpg in Resources */,
 				FAA9A6C01AE1E7060075A50D /* Main.storyboard in Resources */,
+				FAA9A6F31AE23AA20075A50D /* IMG_1131.JPG in Resources */,
+				FAA9A6E51AE237980075A50D /* clarinet.jpg in Resources */,
+				FAA9A6EA1AE237980075A50D /* perc.jpg in Resources */,
+				FAA9A6F61AE23AA20075A50D /* IMG_1134.JPG in Resources */,
+				FAA9A6ED1AE237980075A50D /* trumpet.jpg in Resources */,
 				FAA9A6C51AE1E7070075A50D /* LaunchScreen.xib in Resources */,
 				FAA9A6C21AE1E7060075A50D /* Images.xcassets in Resources */,
+				FAA9A6E81AE237980075A50D /* horn.jpg in Resources */,
+				FAA9A6E61AE237980075A50D /* double.jpg in Resources */,
+				FAA9A6EE1AE237980075A50D /* tuba.jpg in Resources */,
+				FAA9A6F51AE23AA20075A50D /* IMG_1133.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
