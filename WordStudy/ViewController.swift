@@ -16,7 +16,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let buttonSelectLang = UIButton()
     
     let wordJ : [String] = ["りんご", "みかん", "ぶどう", "メロン"]
-
     
     var myValues : NSArray = ["英語","ドイツ語", "フランス語", "イタリア語"]
     var chooseLang: Int = 0
@@ -190,7 +189,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         myUIPicker.delegate = self
         
         
-        //ToolBar作成。ニョキ担当
+        //ToolBar作成
         myToolBar = UIToolbar(frame: CGRectMake(0, self.view.frame.size.height/6, self.view.frame.size.width, 40.0))
         myToolBar.layer.position = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height-20.0)
         myToolBar.backgroundColor = UIColor.blackColor()
