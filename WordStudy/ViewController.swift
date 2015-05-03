@@ -15,9 +15,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let buttonNext = UIButton()
     let buttonSelectLang = UIButton()
     
-    let wordJ : [String] = ["りんご", "みかん", "ぶどう", "メロン"]
-
-    
+    let wordJ : [String] = ["りんご", "みかん", "ぶどう", "メロン"]    
     var myValues : NSArray = ["英語","ドイツ語", "フランス語", "イタリア語"]
     var chooseLang: Int = 0
     let labelLang: UILabel = UILabel(frame: CGRectMake(0,0,200,30))
